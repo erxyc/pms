@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+  <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body id="home">
+
+	<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand hide" href="index.html"><img src="images/moodmart_logo.png" alt="moodmart"></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar"> 
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>   
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item space">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+               <li class="nav-item space">
+                <a class="nav-link" href="how.html">How It Works</a>
+            </li>
+            <li><a class="navbar-brand nav-item space mhide" href="#"><img src="images/moodmart_logo.png" alt="moodmart"></a></li>
+            <li class="nav-item space">
+                <a class="nav-link" href="news.html">Latest News</a>
+            </li>
+            <li class="nav-item space">
+                <a class="nav-link" href="stories.html">Stories</a>
+            </li>
+            
+            <li><div class="icons hide pt-4">
+   <a href="#">
+  <img src="images/insta.png" alt="instagram" style="width:31px;height:31px;border:0;"> </a>
+    <a href="#">
+      <img src="images/twitter.png" alt="twitter" style="width:31px;height:31px;border:0;"></a>
+      <a class="nav-link disabled" href="#">Copyright © REDMART LIMITED. All Rights Reserved</a>
+    </div>
+            </li>
+          
+        </ul>
+    </div>
+</nav>
+
+
+<!-- hero -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One -->
+          <div class="carousel-item active" style="background-image: url('images/emotional.jpg'); background-position: right top;">
+           <div class="row">
+              <div class="carousel-caption hero col-sm-12">
+                <h1 class="animated fadeIn">Emotional</h1>
+                <p class="animated fadeIn">Such passionate feelings</p>
+                <div class="playbutton" data-toggle="modal" data-target="#emotional" onclick="playVid()" />
+                	<div class="play"></div>
+                	<p class="mhide animated zoomIn">Meet Emotional Raeann</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide Two -->
+          <div class="carousel-item" style="background-image: url('images/annoyed.jpg'); background-position: right top;">
+            <div class="row">
+            <div class="carousel-caption hero col-sm-12">
+              <h1 class="animated fadeIn">Annoyed</h1>
+              <p class="animated fadeIn">Urgh, what a chore</p>
+               <div class="playbutton" data-toggle="modal" data-target="#annoyed" onclick="playVid()" />
+              	<div class="play"></div>
+              	<p class="mhide animated zoomIn">Meet Annoyed Raeann</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- Slide Three -->
+          <div class="carousel-item" style="background-image: url('images/miserable.jpg'); background-position: right top;">
+            <div class="row">
+            <div class="carousel-caption hero col-sm-12">
+              <h1 class="animated fadeIn">Miserable</h1>
+              <p class="animated fadeIn">Cannot tahan already</p>
+               <div class="playbutton" data-toggle="modal" data-target="#miserable" onclick="playVid()" />
+              	<div class="play"></div>
+              	<p class="mhide animated zoomIn">Meet Miserable Raeann</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="gradient"></div>
+        <div class="bg"></div>
+      </div>
+
+<!-- Home Video Modal -->
+<div class="modal fade" id="emotional" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()">X</button>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="moodVideo1" class="embed-responsive-item" controls="controls">
+          <source src="images/emotional.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="annoyed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()">X</button>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="moodVideo2" class="embed-responsive-item" controls="controls">
+          <source src="images/annoyed.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="miserable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()">X</button>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="moodVideo3" class="embed-responsive-item" controls="controls">
+          <source src="images/miserable.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div id="sns" class="mhide">
+  <div class="icons">
+  <a href="#">
+  <img src="images/insta.png" alt="instagram" style="width:31px;height:31px;border:0;"> </a>
+    <a href="#">
+      <img src="images/twitter.png" alt="twitter" style="width:31px;height:31px;border:0;"></a>
+</div>
+<div id="footer"> 
+	Copyright © REDMART LIMITED. All Rights Reserved
+</div>
+</div>
+
+
+
+
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
